@@ -290,10 +290,34 @@ h2 {
     border-radius: 50px;
 }
 
+#v-pills-tab button {
+    color: #a8af69 !important;
+    width: 150px;
+    margin: 0 auto;
+    background-color: transparent !important;
+    font-weight: 600;
+    border: 2px solid transparent !important;
+}
+
+#v-pills-tabContent img {
+    width: 80%;
+}
+
+#v-pills-tab {
+    gap: 10px;
+}
+
+#v-pills-tab button:hover {
+    border: 2px solid #a8af69 !important;
+}
+
+#v-pills-tab .active {
+    border: 2px solid #a8af69 !important;
+}
 
 .tab-content {
     margin-bottom: 50px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 /* Responsive */
