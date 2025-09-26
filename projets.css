@@ -74,6 +74,17 @@ nav input {
     flex-direction: column;
 }
 
+.search-actus {
+    margin: 0 auto;
+    display: block;
+    outline: none;
+    border-bottom: 2px solid #e5e3e3;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 250px;
+    margin-top: 70px;
+}
 
 .news-card {
     max-width: 800px;
@@ -122,6 +133,38 @@ nav input {
     z-index: 99999;
     background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gap-10 {
+    gap: 30px;
+}
+
+.news-content img {
+    width: 30px;
+}
+
+.tag {
+    width: 25px !important;
+    position: relative;
+    top: -2px;
+}
+
+.news-content span {
+    display: flex;
+    align-items: self-end;
+    color: #444;
+    gap: 5px;
+}
+
+.btn-actus-world {
+    margin: 0 auto;
+    width: 250px;
+    display: block;
+    margin-top: 30px;
+    border: none;
+    padding: 13px 10px;
+    color: #878484;
+    margin-bottom: 70px;
 }
 
 .news-content h3 {

@@ -50,6 +50,50 @@
             distinctio vero necessitatibus optio repellat. Blanditiis reprehenderit reiciendis vero et nulla, rem
             tenetur eos sed quasi est soluta quibusdam numquam placeat. Enim quidem magni vitae sed est.
         </p>
+        <div class="mb-3">
+
+            <form class="row g-3">
+                <!-- Titre -->
+                <div class="col-md-4">
+                    <label for="titre" class="form-label">Titre</label>
+                    <input type="text" class="form-control" id="titre" name="titre" placeholder="Titre">
+                </div>
+
+                <!-- Auteurs -->
+                <div class="col-md-4">
+                    <label for="auteurs" class="form-label">Auteurs</label>
+                    <input type="text" class="form-control" id="auteurs" name="auteurs" placeholder="Auteurs">
+                </div>
+
+                <!-- Date de publication -->
+                <div class="col-md-4">
+                    <label for="date" class="form-label">Date de publication</label>
+                    <input type="date" class="form-control" id="date" name="date">
+                </div>
+
+                <!-- Mots clés -->
+                <div class="col-md-6">
+                    <label for="motscles" class="form-label">Mots clés</label>
+                    <input type="text" class="form-control" id="motscles" name="motscles" placeholder="Mots clés">
+                </div>
+
+                <!-- Région -->
+                <div class="col-md-6">
+                    <label for="region" class="form-label">Région</label>
+                    <select id="region" name="region" class="form-select">
+                        <option value="">Tout</option>
+                        <option value="region1">Région 1</option>
+                        <option value="region2">Région 2</option>
+                        <option value="region3">Région 3</option>
+                    </select>
+                </div>
+
+                <!-- Bouton -->
+                <div class="col-12">
+                    <button type="submit" class="btn btn-docu">Rechercher</button>
+                </div>
+            </form>
+        </div>
 
         <table>
             <thead>
@@ -57,37 +101,45 @@
                     <th scope="col">Nom du fichier</th>
                     <th scope="col">Taille</th>
                     <th scope="col">Description</th>
-                    <th scope="col" class="text-center">Télécharger</th>
+                    <th scope="col">Auteurs</th>
+                    <th scope="col">Date</th>
+                    <th scope="col" class="text-center">Consulter</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>rapport_arnica.pdf</td>
+                    <td>Rapport Arnica</td>
                     <td>2.4 Mo</td>
                     <td>Rapport complet sur l’Arnica montana</td>
+                    <td>Edward James</td>
+                    <td>2025-08-27</td>
                     <td class="text-center">
                         <a href="docs/rapport_arnica.pdf" download class="btn btn-success btn-sm">
-                            <i class="fa-solid fa-download"></i> Télécharger
+                            <i class="fa-solid fa-eye"></i> Consulter
                         </a>
                     </td>
                 </tr>
                 <tr>
-                    <td>guide_biodiversite.docx</td>
+                    <td>Guide biodiversité</td>
                     <td>1.2 Mo</td>
                     <td>Guide méthodologique biodiversité</td>
+                    <td>Edward James</td>
+                    <td>2025-08-27</td>
                     <td class="text-center">
                         <a href="docs/guide_biodiversite.docx" download class="btn btn-success btn-sm">
-                            <i class="fa-solid fa-download"></i> Télécharger
+                            <i class="fa-solid fa-eye"></i> Consulter
                         </a>
                     </td>
                 </tr>
                 <tr>
-                    <td>fiche_prairies.xlsx</td>
+                    <td>Fiche prairies</td>
                     <td>850 Ko</td>
                     <td>Données sur les prairies humides</td>
+                    <td>Edward James</td>
+                    <td>2025-08-27</td>
                     <td class="text-center">
                         <a href="docs/fiche_prairies.xlsx" download class="btn btn-success btn-sm">
-                            <i class="fa-solid fa-download"></i> Télécharger
+                            <i class="fa-solid fa-eye"></i> Consulter
                         </a>
                     </td>
                 </tr>
@@ -118,24 +170,24 @@
                 <div class="row">
                     <div class="col-md-4">
                         <ul>
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Cueillette</a></li>
-                            <li><a href="#">Espèces cueillies</a></li>
-                            <li><a href="#">Cueilleurs</a></li>
-                            <li><a href="#">Filière aval</a></li>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="cueillette.html">Cueillette</a></li>
+                            <li><a href="Especes_cueillies.html">Espèces cueillies</a></li>
+                            <li><a href="cueilleur_euse.html">Cueilleurs</a></li>
+                            <li><a href="filliere_aval.html">Filière aval</a></li>
                             <li><a href="#">Actions de gestion</a></li>
-                            <li><a href="#">Documentation</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <ul>
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Cueillette</a></li>
-                            <li><a href="#">Espèces cueillies</a></li>
-                            <li><a href="#">Cueilleurs</a></li>
-                            <li><a href="#">Filière aval</a></li>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="cueillette.html">Cueillette</a></li>
+                            <li><a href="Especes_cueillies.html">Espèces cueillies</a></li>
+                            <li><a href="cueilleur_euse.html">Cueilleurs</a></li>
+                            <li><a href="filliere_aval.html">Filière aval</a></li>
                             <li><a href="#">Actions de gestion</a></li>
-                            <li><a href="#">Documentation</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">

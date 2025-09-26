@@ -78,9 +78,18 @@ nav input {
     flex-direction: column;
 }
 
+.btn-docu {
+    background-color: #2d621c !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 5px !important;
+}
+
 .p-ceuillette-intro {
     margin-top: 100px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 /* TABLEAU CUEILLETTE */

@@ -129,6 +129,7 @@ nav input {
 
 
 .content-ampoule {
+    border: 2px solid #F9D518 !important;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -141,7 +142,6 @@ nav input {
 
 .content-ampoule p {
     margin-bottom: 0;
-    display: none;
 }
 
 /* TABLEAU CUEILLETTE */
