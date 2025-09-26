@@ -1,0 +1,218 @@
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 40px;
+}
+
+nav .logo {
+    font-weight: bold;
+    color: #6a8345;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-active-especes-cueillies {
+    border-bottom: 4px solid #A8AF69;
+}
+
+nav ul li a:hover {
+    border-bottom: 4px solid #A8AF69;
+}
+
+nav .auth {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav input {
+    padding: 5px;
+}
+
+.btn-login {
+    background: #A8AF69;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+/* SWIPER */
+
+
+.swiper {
+    max-width: 1120px;
+    width: 1120px;
+    height: 300px;
+    margin-bottom: 50px;
+    border: 2px solid #A8AF69;
+}
+
+.swiper-scrollbar {
+    display: none;
+}
+
+.swiper-button-prev {
+    left: 20px !important
+        /* décale vers la gauche */
+}
+
+.swiper-button-next {
+    right: 20px !important;
+    /* décale vers la droite */
+}
+
+
+.swiper-navigation-icon {
+    color: #2D621C;
+}
+
+.swiper-pagination-bullet-active {
+    background: #2D621C !important;
+}
+
+.swiper-slide blockquote {
+    width: 80%;
+    text-align: center;
+}
+
+
+.swiper-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.ampoule-cueilleur-euse {
+    width: 39px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ampoule-cueilleur-euse:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.content-ampoule:has(.ampoule-cueilleur-euse:hover) {
+    border: 2px solid #F9D518;
+    transition: all 0.3s;
+    padding-left: 15px;
+}
+
+.content-ampoule:has(.ampoule-cueilleur-euse:hover) p {
+    display: block;
+}
+
+
+.content-ampoule {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 2px solid transparent;
+    padding-right: 15px;
+    transition: all 0.3s;
+}
+
+.content-ampoule p {
+    margin-bottom: 0;
+    display: none;
+}
+
+/* TABLEAU CUEILLETTE */
+
+.bdn-cueillette-simple {
+    height: 147px;
+    background-color: #A8AF69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bdn-cueillette-simple-text {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pagination {
+    display: flex !important;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Boutons Prev et Suiv */
+.pagination .btn {
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: all 0.2s;
+}
+
+.pagination .btn:hover {
+    background: #f2f2f2;
+}
+
+/* Numéros */
+.pagination .pages {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination .pages li {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.pagination .pages li:hover {
+    background: #f4f4f4;
+}
+
+/* Actif */
+.pagination .pages .active {
+    background: #a8af69;
+    color: #fff;
+    font-weight: bold;
+}

@@ -1,0 +1,352 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 40px;
+}
+
+nav .logo {
+    font-weight: bold;
+    color: #6a8345;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-active-especes-cueillies {
+    border-bottom: 4px solid #A8AF69;
+}
+
+nav ul li a:hover {
+    border-bottom: 4px solid #A8AF69;
+}
+
+nav .auth {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav input {
+    padding: 5px;
+}
+
+.btn-login {
+    background: #A8AF69;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.nav-tabs .nav-link {
+    background: #fff;
+    border-radius: 6px;
+    margin: 0 5px;
+    color: #333;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 150px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.nav-tabs .nav-link:hover {
+    background: #a8af69 !important;
+    color: #fff !important;
+}
+
+.nav-tabs .nav-link.active {
+    background: #a8af69 !important;
+    color: #fff !important;
+    border-color: #a8af69;
+    border: none;
+}
+
+#plantTab {
+    margin-top: 100px;
+    border: none;
+}
+
+.nav-link img {
+    transition: 0.3s;
+}
+
+.nav-profile:hover img {
+    content: url("img/profil.png");
+}
+
+.active.nav-profile img {
+    content: url("img/profil.png");
+}
+
+.nav-appli:hover img {
+    content: url("img/application.png");
+}
+
+.active.nav-appli img {
+    content: url("img/application.png");
+}
+
+.nav-france:hover img {
+    content: url("img/france.png");
+}
+
+.active.nav-france img {
+    content: url("img/france.png");
+}
+
+.nav-habitat:hover img {
+    content: url("img/habitat_blanc.png");
+}
+
+.active.nav-habitat img {
+    content: url("img/habitat_blanc.png");
+}
+
+.nav-groupe:hover img {
+    content: url("img/groupe.png");
+}
+
+.active.nav-groupe img {
+    content: url("img/groupe.png");
+}
+
+.nav-ressource:hover img {
+    content: url("img/croix-rouge.png");
+}
+
+.active.nav-ressource img {
+    content: url("img/croix-rouge.png");
+}
+
+.nav-eco:hover img {
+    content: url("img/diagramme-a-bandes.png");
+}
+
+.active.nav-eco img {
+    content: url("img/diagramme-a-bandes.png");
+}
+
+/* Image */
+.plant-image {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    margin-top: 80px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.description {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #444;
+    text-align: left;
+    margin-top: 30px;
+
+}
+
+.btn-custom {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 30px;
+    background: #a8af69;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.btn-custom:hover {
+    background: #8d9458;
+}
+
+#desc h2 {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+
+/* MAP */
+
+#map-france {
+    width: 100%;
+    height: 800px;
+    /* ajuste la hauteur comme tu veux */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* USAGE */
+
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin: 50px auto;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    text-align: center;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.table-header>div {
+    padding: 12px;
+    font-weight: bold;
+    position: relative;
+    padding: 26px 15px;
+    font-weight: bold;
+    position: relative;
+    margin: 10px;
+    background: #a8b66a;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 19px;
+}
+
+.table-header>div hr {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.4;
+    border: none;
+    margin: 0 auto;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+
+.table-row .col {
+    padding: 12px;
+}
+
+.table-row .col:first-child {
+    border-left: none;
+    font-weight: bold;
+    color: #444;
+}
+
+.trait-span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.trait-vert {
+    height: 50px;
+    display: block;
+    width: 4px;
+    background-color: #A8AF69;
+    border-radius: 50px;
+}
+
+
+.tab-content {
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr;
+    }
+
+    .table-header>div,
+    .table-row .col {
+        border-left: none;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #A8AF69;
+    color: white;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+copyright {
+    text-align: center;
+}

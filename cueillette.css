@@ -1,0 +1,191 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 40px;
+}
+
+nav .logo {
+    font-weight: bold;
+    color: #6a8345;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-active-especes-cueillies {
+    border-bottom: 4px solid #A8AF69;
+}
+
+nav ul li a:hover {
+    border-bottom: 4px solid #A8AF69;
+}
+
+nav .auth {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav input {
+    padding: 5px;
+}
+
+.btn-login {
+    background: #A8AF69;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* ceuillette */
+
+.bdn-cueillette-simple {
+    height: 147px;
+    background-color: #A8AF69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bdn-cueillette-simple-text {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.first-p-cueilette {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.accord-cueillette {
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.accord-cueillette button {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.accord-cueillette button p {
+    font-size: 20px;
+    font-weight: normal !important;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: black !important;
+}
+
+.accord-cueillette .accordion-button::after {
+
+    width: 35px;
+    /* plus grand que la valeur par défaut */
+    height: 35px;
+    margin-left: 10px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    /* taille réelle de l'icône */
+    background-position: center;
+    /* centrée dans le ::after */
+    background-color: #BABF92 !important;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+}
+
+.accord-cueillette .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding-bottom: 0 !important;
+    color: black !important;
+}
+
+.accord-cueillette .accordion-button {
+    display: flex;
+    flex-direction: column !important;
+    align-items: start !important;
+    padding: 35px;
+}
+
+.accord-cueillette .accordion-body {
+    padding: 35px;
+}
+
+.accord-cueillette .accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accord-hr {
+    height: 1px;
+    width: 100%;
+    border: none;
+    background-color: grey;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+/* FOOTER */
+
+footer {
+    background: #A8AF69;
+    color: white;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+copyright {
+    text-align: center;
+}

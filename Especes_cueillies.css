@@ -1,0 +1,198 @@
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 40px;
+}
+
+nav .logo {
+    font-weight: bold;
+    color: #6a8345;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-active-especes-cueillies {
+    border-bottom: 4px solid #A8AF69;
+}
+
+nav ul li a:hover {
+    border-bottom: 4px solid #A8AF69;
+}
+
+nav .auth {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav input {
+    padding: 5px;
+}
+
+.btn-login {
+    background: #A8AF69;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+/* SECTION CUEILLETTE */
+
+.p-ceuillette-intro {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+/* TABLEAU CUEILLETTE */
+
+table {
+    width: 100%;
+    border-collapse: separate !important;
+    border-spacing: 0 20px;
+}
+
+thead {
+    background-color: #A8AF69;
+    /* vert olive clair */
+    color: #fff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+thead th:nth-child(1) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+tbody tr td .separateur {
+    width: 5px;
+    height: 57px;
+    background-color: #A8AF69;
+    display: block;
+    border-radius: 5px;
+}
+
+
+
+
+tbody td {
+    padding: 15px 12px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* Badge "Très forte" */
+.pression {
+    background-color: #fcd9df;
+    color: #d23c4d;
+    padding: 7px 13px;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+/* Icône modifier (pictogramme crayon) */
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #97a657;
+    cursor: pointer;
+    border-left: 2px solid #afafaf;
+}
+
+table .icon a {
+    color: #97a657;
+}
+
+.icon:hover {
+    color: #6f7c3f;
+}
+
+.pagination {
+    display: flex !important;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Boutons Prev et Suiv */
+.pagination .btn {
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: all 0.2s;
+}
+
+.pagination .btn:hover {
+    background: #f2f2f2;
+}
+
+/* Numéros */
+.pagination .pages {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination .pages li {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.pagination .pages li:hover {
+    background: #f4f4f4;
+}
+
+/* Actif */
+.pagination .pages .active {
+    background: #a8af69;
+    color: #fff;
+    font-weight: bold;
+}

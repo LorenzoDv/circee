@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre de Ressources - Plantes Sauvages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="filliere_aval.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><img src="img/Capture d’écran du 2025-08-27 09-28-56.png" alt="logo"></div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cueillette.html">Cueillette</a></li>
+            <li><a href="Especes_cueillies.html">Espèces cueillies</a></li>
+            <li><a href="cueilleur_euse.html">Cueilleurs·euses</a></li>
+            <li><a class="nav-active-especes-cueillies" href="filliere_aval.html">Filière aval</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="#">Documentation</a></li>
+        </ul>
+        <div class="auth">
+            <input type="text" placeholder="Rechercher">
+            <button class="btn-login">Se connecter</button>
+        </div>
+    </nav>
+    <div class="bdn-cueillette-simple">
+        <div class="bdn-cueillette-simple-text">
+            <h1>Filière aval</h1>
+            <span>Accueil / Filière aval</span>
+        </div>
+    </div>
+    <!-- SECTION CUEILLETTE -->
+    <div class="container">
+        <h2 style="margin-top:50px;">Une diversité de productions et de marchés</h2>
+        <p>
+            La filière des Plantes à Parfums, Aromatiques et Médicinales (PPAM), petite au regard des surfaces cultivées
+            (59 400 ha en 2023),a pour spécificité de produire 300 espèces de plantes différentes et plus de 1000
+            références de produits. Les marchés des PPAM sont multiples et les produits sont valorisés dans les circuits
+            alimentaires (herboristerietisanes , épices & aromates), dans les secteurs de la parfumerie, des
+            cosmétiques, du médicament (dont l’herboristerie et l’homéopathie), du complément alimentaire, des
+            détergents, de la nutrition animale, des alternatives aux produits phytosanitaires...<br><br>
+            Les marchés sont souvent de niche, ils peuvent être à forte valeur ajoutée, assez fluctuants et vite
+            déstabilisés. La production biologique, qui concerne 28 % de la production française, est plus élevée dans
+            cette filière que la moyenne nationale, et les signes de qualité sont nombreux (AB, AOP, label rouge,
+            mention Simples, Nature & Progrès, Demeter, commerce équitable…).<br><br>
+            La cueillette est une filière encore mal connue, elle est essentielle pour certains territoires, notamment
+            la montagne où elle permet de valoriser la flore et joue un rôle économique et social non négligeable.
+        </p>
+        <img class="img-fluid" src="img/Filière_Aval.png" alt="Filière aval">
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-links row">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <img src="img/logo-footer.png" alt="logo">
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Cueillette</a></li>
+                            <li><a href="#">Espèces cueillies</a></li>
+                            <li><a href="#">Cueilleurs</a></li>
+                            <li><a href="#">Filière aval</a></li>
+                            <li><a href="#">Actions de gestion</a></li>
+                            <li><a href="#">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Cueillette</a></li>
+                            <li><a href="#">Espèces cueillies</a></li>
+                            <li><a href="#">Cueilleurs</a></li>
+                            <li><a href="#">Filière aval</a></li>
+                            <li><a href="#">Actions de gestion</a></li>
+                            <li><a href="#">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameter
+            loop: true,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            autoplay: {
+                delay: 85555555,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+</body>
+
+
+
+</html>

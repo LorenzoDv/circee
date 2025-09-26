@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre de Ressources - Plantes Sauvages</title>
+    <link rel="stylesheet" href="fiche.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><img src="img/Capture d’écran du 2025-08-27 09-28-56.png" alt="logo"></div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cueillette.html">Cueillette</a></li>
+            <li><a class="nav-active-especes-cueillies" href="Especes_cueillies.html">Espèces cueillies</a></li>
+            <li><a href="cueilleur_euse.html">Cueilleurs·euses</a></li>
+            <li><a href="filliere_aval.html">Filière aval</a></li>
+            <li><a href="#">Projets</a></li>
+            <li><a href="#">Documentation</a></li>
+        </ul>
+        <div class="auth">
+            <input type="text" placeholder="Rechercher">
+            <button class="btn-login">Se connecter</button>
+        </div>
+    </nav>
+    <div class="bdn-cueillette">
+        <img src="img/bdn-arnica.png" class="w-100" alt="Cueillette">
+    </div>
+    <!-- SECTION CUEILLETTE -->
+    <div class="container">
+        <ul class="nav nav-tabs justify-content-center mb-4" id="plantTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active nav-profile" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc"
+                    type="button" role="tab">
+                    <img src="img/profil_gris.png" alt="">
+                    Description
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-appli" id="statut-tab" data-bs-toggle="tab" data-bs-target="#statut"
+                    type="button" role="tab">
+                    <img src="img/application_gris.png" alt="">
+                    Statut
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-france" id="map-tab" data-bs-toggle="tab" data-bs-target="#map"
+                    type="button" role="tab">
+                    <img src="img/france_gris.png" alt="">
+                    Carte de répartition<br>et de cueillette
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-habitat" id="habitats-tab" data-bs-toggle="tab" data-bs-target="#habitats"
+                    type="button" role="tab">
+                    <img src="img/habitat_gris.png" alt="">
+                    Millieux
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-groupe" id="usages-tab" data-bs-toggle="tab" data-bs-target="#usages"
+                    type="button" role="tab">
+                    <img src="img/groupe_gris.png" alt="">
+                    Usages
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-ressource" id="etat-tab" data-bs-toggle="tab" data-bs-target="#etat"
+                    type="button" role="tab">
+                    <img src="img/croix-rouge_gris.png" alt="">
+                    État de la ressource
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-eco" id="donnees-tab" data-bs-toggle="tab" data-bs-target="#donnees"
+                    type="button" role="tab">
+                    <img src="img/diagramme-a-bandes_gris.png" alt="">
+                    Données<br>économiques
+                </button>
+            </li>
+        </ul>
+
+        <!-- Contenu des onglets -->
+        <div class="tab-content text-center" id="plantTabContent">
+            <!-- Onglet description -->
+            <div class="tab-pane fade show active" id="desc" role="tabpanel">
+                <img src="img/arnica.png" alt="Plante" class="plant-image">
+                <h2>ARNICA MONTANA</h2>
+                <div class="description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, natus! Fugit soluta eum nam
+                        veniam tenetur pariatur eaque! Sed sit voluptatibus corrupti veniam quia nam voluptas!
+                        Voluptatum, reprehenderit ipsam. Illo nobis voluptate ab, unde amet voluptates nostrum nulla
+                        possimus totam ducimus placeat nisi optio porro. Sapiente nam harum officiis, beatae a ad rerum
+                        tempora, impedit, perferendis voluptatum nemo velit possimus quas modi aliquam necessitatibus
+                        vel ab rem vitae fugit dicta. Suscipit commodi doloremque unde, vitae praesentium expedita
+                        nostrum. Voluptatem molestiae culpa temporibus pariatur corrupti assumenda provident consequatur
+                        aliquam recusandae dignissimos! Esse, inventore beatae veritatis officiis aspernatur temporibus
+                        ad molestias in?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga animi delectus numquam vero soluta
+                        corporis amet, ipsum fugit, voluptatum cupiditate voluptatem! Fuga quod laborum quis animi sequi
+                        obcaecati officia distinctio minus ducimus accusantium, excepturi deserunt omnis ullam aperiam
+                        inventore doloribus!</p>
+                </div>
+                <a href="#" class="btn-custom">Lien vers INPN</a>
+            </div>
+
+            <!-- Onglet statut -->
+            <div class="tab-pane fade" id="statut" role="tabpanel">
+                <h2>Statut</h2>
+                <p>Ici tu ajoutes les infos sur le statut.</p>
+            </div>
+
+            <!-- Onglet carte -->
+            <div class="tab-pane fade" id="map" role="tabpanel">
+                <div id="map-france"></div>
+            </div>
+
+            <!-- Onglet habitats -->
+            <div class="tab-pane fade" id="habitats" role="tabpanel">
+                <h2>Millieux</h2>
+                <p>Infos sur les habitats.</p>
+            </div>
+
+            <!-- Onglet usages -->
+            <div class="tab-pane fade" id="usages" role="tabpanel">
+                <div class="table-container">
+                    <div class="table-header">
+                        <div>Partie récoltées
+                            <hr>
+                        </div>
+                        <div>Réseaux de distribution
+                            <hr>
+                        </div>
+                        <div>Domaines d’usage
+                            <hr>
+                        </div>
+                        <div>Produits
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="col trait-span"><span class="trait-vert"></span>Capitule</div>
+                        <div class="col trait-span">
+                            <span class="trait-vert"></span>
+                            - Laboratoire <br>
+                            - Vente directe <br>
+                            - Pharmacie <br>
+                            - Herboristerie
+                        </div>
+                        <div class="col trait-span">
+                            <span class="trait-vert"></span>
+                            - Cosmétique <br>
+                            - Phytothérapie
+                        </div>
+                        <div class="col trait-span">
+                            <span class="trait-vert"></span>
+                            - Macérat huileux <br>
+                            - Baume <br>
+                            - Pommade <br>
+                            - Tisane
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="col trait-span"><span class="trait-vert"></span>Plante entière</div>
+                        <div class="col trait-span">
+                            <span class="trait-vert"></span>
+                            - Laboratoire <br>
+                            - Vente directe <br>
+                            - Pharmacie <br>
+                            - Herboristerie
+                        </div>
+                        <div class="col trait-span">
+                            <span class="trait-vert"></span>
+                            - Cosmétique <br>
+                            - Phytothérapie
+                        </div>
+                        <div class="col trait-span">
+                            <span class="trait-vert"></span>
+                            - Alcoolature <br>
+                            - Teinture mère <br>
+                            - Baume <br>
+                            - Pommade
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="col trait-span"><span class="trait-vert"></span>Racine</div>
+                        <div class="col trait-span">
+                            <span class="trait-vert"></span>
+                            - Laboratoire
+                        </div>
+                        <div class="col trait-span">
+                            <span class="trait-vert"></span>
+                            - Homéopathie
+                        </div>
+                        <div class="col trait-span">
+                            <span class="trait-vert"></span>
+                            - Solution buvable
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Onglet état -->
+            <div class="tab-pane fade" id="etat" role="tabpanel">
+                <h2>État de la ressource</h2>
+                <p>Infos sur l’état de la ressource.</p>
+            </div>
+
+            <!-- Onglet données -->
+            <div class="tab-pane fade" id="donnees" role="tabpanel">
+                <h2>Données économiques</h2>
+                <p>Infos économiques ici.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-links row">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <img src="img/logo-footer.png" alt="logo">
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Cueillette</a></li>
+                            <li><a href="#">Espèces cueillies</a></li>
+                            <li><a href="#">Cueilleurs</a></li>
+                            <li><a href="#">Filière aval</a></li>
+                            <li><a href="#">Actions de gestion</a></li>
+                            <li><a href="#">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Cueillette</a></li>
+                            <li><a href="#">Espèces cueillies</a></li>
+                            <li><a href="#">Cueilleurs</a></li>
+                            <li><a href="#">Filière aval</a></li>
+                            <li><a href="#">Actions de gestion</a></li>
+                            <li><a href="#">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Extent en EPSG:3857 pour la France
+
+
+            const map = new ol.Map({
+                target: 'map-france',
+                layers: [
+                    new ol.layer.Tile({
+                        source: new ol.source.OSM() // ou tuiles IGN
+                    })
+                ],
+                view: new ol.View({
+                    center: ol.proj.fromLonLat([2.2137, 46.2276]),
+                    zoom: 6,
+
+                })
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>
