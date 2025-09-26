@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centre de Ressources - Plantes Sauvages</title>
     <link rel="stylesheet" href="fiche.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -20,15 +21,16 @@
 <body>
 
     <nav>
-        <div class="logo"><img src="img/Capture d’écran du 2025-08-27 09-28-56.png" alt="logo"></div>
+        <div class="logo"><a href="index.html"><img src="img/Capture d’écran du 2025-08-27 09-28-56.png" alt="logo"></a>
+        </div>
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="cueillette.html">Cueillette</a></li>
             <li><a class="nav-active-especes-cueillies" href="Especes_cueillies.html">Espèces cueillies</a></li>
             <li><a href="cueilleur_euse.html">Cueilleurs·euses</a></li>
             <li><a href="filliere_aval.html">Filière aval</a></li>
-            <li><a href="#">Projets</a></li>
-            <li><a href="#">Documentation</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
         </ul>
         <div class="auth">
             <input type="text" placeholder="Rechercher">
@@ -302,9 +304,103 @@
 
             <!-- Onglet état -->
             <div class="tab-pane fade" id="etat" role="tabpanel">
-                <h2>État de la ressource</h2>
-                <p>Infos sur l’état de la ressource.</p>
+                <div class="container-fluid">
+                    <div class="row space-evenly">
+
+                        <!-- Colonne gauche -->
+                        <div class="col-md-4 etat-tabs-left">
+                            <h3 class="mb-5">Une ressource en régression avec une pression importante</h3>
+                            <p>
+                                Inféodée à des milieux spécifiques et fragiles dépendants des activités agropastorales,
+                                sensible aux variations météorologiques comme aux bouleversements climatiques et enfin
+                                très recherchée par l'industrie, la ressource en arnica a fortement décliné à l'échelle
+                                nationale ces dernières années.
+                                De nombreux cueilleurs ont observé un pic de floraison et une augmentation de la densité
+                                en arnica après des pratiques de brûlis ou de gyrobroyage dans les milieux de landes à
+                                callunes, à genêts ou à rhododendron. Des expérimentations pour favoriser la ressource
+                                en arnica sont en cours dans les Pyrénées orientales par exemple, afin de tester
+                                différentes modalités de gestion de l’espace pastoral, et les premiers résultats sont
+                                encourageants. Ces tests seront prochainement étendus à d’autres sites dans le cadre
+                                d’un projet de gestion adaptative de l’arnica piloté par l’Office français de la
+                                biodiversité.
+
+                                Chaque année, l’AFC publie un bulletin de l’état des ressources en arnica, à télécharger
+                                ici
+                                : Mettre en téléchargement le bulletin Etat de la ressource par année :
+                                https://www.cueillettes-pro.org/actualites/des-nouvelles-de-la-ressource-en-arnica-en-2024
+                                2025 à venir très prochainement
+
+                                Reprise du tableau livret de l’AFC (facteurs de pression)
+
+                            </p>
+                        </div>
+
+                        <!-- Colonne droite -->
+                        <div class="col-md-6 etat-tabs-right">
+                            <h3 class="mb-5">Principaux facteurs d’influence sur la ressource</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered align-middle table-etat">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th></th>
+                                            <th class="bg-color-green">Impact sur la ressource
+                                                <hr>
+                                            </th>
+                                            <th class="bg-color-green">Commentaires
+                                                <hr>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mb-3">
+                                            <td class="bg-color-green">Agriculture extensive / pâturage estive bovin /
+                                                équin</td>
+                                            <td class="text-center">✔️</td>
+                                            <td>Préservation de la ressource.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-color-green">Défrichage estive / ouverture de milieu</td>
+                                            <td class="text-center">✔️</td>
+                                            <td>Favoriser l’expression de l’espèce tant que les conditions lui sont
+                                                favorables.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-color-green">Fauche tardive</td>
+                                            <td class="text-center">✔️</td>
+                                            <td>Permet de limiter la concurrence avec la végétation arbustive (genêt,
+                                                Éricacées).</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-color-green">Enrichissement / déprise agricole</td>
+                                            <td class="text-center">❌</td>
+                                            <td>Disparition de la ressource avec abandon des prairies.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-color-green">Entretien "conventionnel" des prairies :
+                                                amendements calcaires, engrais
+                                                azotés, semis artificiels</td>
+                                            <td class="text-center">❌</td>
+                                            <td>
+                                                Disparition de la ressource à long terme : <br>
+                                                - augmentation du pH (amendement calcique)<br>
+                                                - augmentation de la fertilité des sols<br>
+                                                - développement de plantes concurrentes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-color-green">Élevage ovin / pâturage avin</td>
+                                            <td class="text-center">❌</td>
+                                            <td>Disparition de la ressource à moyen terme.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
 
             <!-- Onglet données -->
             <div class="tab-pane fade" id="donnees" role="tabpanel">

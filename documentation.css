@@ -60,6 +60,24 @@ nav input {
 
 /* SECTION CUEILLETTE */
 
+/* TABLEAU CUEILLETTE */
+
+.bdn-cueillette-simple {
+    height: 147px;
+    background-color: #A8AF69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bdn-cueillette-simple-text {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .p-ceuillette-intro {
     margin-top: 100px;
     margin-bottom: 80px;
@@ -135,8 +153,7 @@ tbody td {
 }
 
 table .icon a {
-    color: #2d621c;
-    font-size: 26px;
+    color: #97a657;
 }
 
 .icon:hover {

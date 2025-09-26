@@ -303,6 +303,15 @@ h2 {
     width: 80%;
 }
 
+#v-pills-tabContent .active {
+    display: flex;
+    flex-direction: column;
+}
+
+#v-pills-tabContent .active p {
+    text-align: left;
+}
+
 #v-pills-tab {
     gap: 10px;
 }
@@ -318,6 +327,52 @@ h2 {
 .tab-content {
     margin-bottom: 50px;
     margin-top: 30px;
+}
+
+.etat-tabs-left {
+    text-align: left;
+}
+
+.etat-tabs-right {
+    text-align: left;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.etat-tabs-right td,
+th,
+tr {
+    border: none !important;
+}
+
+.bg-color-green {
+    background-color: #a8af69 !important;
+    border-radius: 10px;
+    color: white !important;
+}
+
+.table-etat {
+    border-collapse: separate;
+    border-spacing: 15px 10px;
+    /* espace vertical de 10px */
+}
+
+.table-etat hr {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    Opacity: 0.4;
+    border: none;
+    margin: 0 auto;
+}
+
+.table-etat th:nth-child(2),
+.table-etat th:nth-child(3) {
+    width: 50%;
+    padding: 15px;
+    /* même largeur pour les 2 colonnes */
 }
 
 /* Responsive */

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centre de Ressources - Plantes Sauvages</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="documentation.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -16,102 +17,96 @@
 
 <body>
 
-    <!-- HEADER -->
-    <header class="hero">
-        <div class="overlay">
-            <img class="img-fluid" src="img/header.png" alt="header">
-        </div>
-    </header>
-
     <nav>
         <div class="logo"><a href="index.html"><img src="img/Capture d’écran du 2025-08-27 09-28-56.png" alt="logo"></a>
         </div>
-        </div>
         <ul>
-            <li><a class="nav-active-accueil" href="index.html">Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="cueillette.html">Cueillette</a></li>
             <li><a href="Especes_cueillies.html">Espèces cueillies</a></li>
             <li><a href="cueilleur_euse.html">Cueilleurs·euses</a></li>
             <li><a href="filliere_aval.html">Filière aval</a></li>
             <li><a href="projets.html">Projets</a></li>
-            <li><a href="documentation.html">Documentation</a></li>
+            <li><a class="nav-active-especes-cueillies" href="documentation.html">Documentation</a></li>
         </ul>
         <div class="auth">
             <input type="text" placeholder="Rechercher">
             <button class="btn-login">Se connecter</button>
         </div>
     </nav>
-
+    <div class="bdn-cueillette-simple">
+        <div class="bdn-cueillette-simple-text">
+            <h1>Documentation</h1>
+            <span>Accueil / Documentation</span>
+        </div>
+    </div>
     <!-- SECTION CUEILLETTE -->
     <div class="container">
-        <div class="row cueillette">
-            <div class="col-md-6">
-                <h1 class="mb-5">LA CUEILLETTE</h1>
-                <p class="mb-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cumque odio exercitationem inventore
-                    aliquam! Quam explicabo tempore molestiae, qui beatae ad sequi dolore atque voluptatum eaque nemo
-                    vitae
-                    quaerat quidem delectus quod dicta saepe placeat ratione iste distinctio sapiente? Sed voluptatum
-                    molestiae quae expedita labore ipsum incidunt tenetur excepturi doloribus.
-                </p>
-                <a href="#" class="btn-info"><span class="plus-info">+</span>PLUS D'INFOS</a>
-                <div class="mt-5 position-absolute d-flex boite-ceuillette">
-                    <div class="bg-ceuillette-info">
-                        <span><img src="img/profil.png" alt=""></span>
-                        <p>Types de<br> cueilleurs</p>
-                    </div>
-                    <div class="bg-ceuillette-info">
-                        <span><img src="img/fleur.png" alt=""></span>
-                        <p>X<br> espèces<br> cueillies</p>
-                    </div>
-                    <div class="bg-ceuillette-info">
-                        <span><img src="img/immeuble-de-bureaux.png" alt=""></span>
-                        <p>Types<br> entreprises<br> utilisatrices</p>
-                    </div>
-                    <div class="bg-ceuillette-info">
-                        <span><img src="img/la-nature.png" alt=""></span>
-                        <p>
-                            X<br> milieux<br> concernés
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 photo-cueillette-droite d-flex align-items-center justify-content-center">
-                <img src="img/photo provisoire.jpg" alt="Cueillette">
-            </div>
+        <p class="p-ceuillette-intro">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit aspernatur nam maxime quaerat dolore
+            doloremque inventore reprehenderit tempora accusantium unde consequatur dignissimos eaque officia iste
+            perspiciatis, eveniet eligendi ut placeat quis nobis in veniam. Aliquam mollitia ex minus, atque molestiae
+            nobis fugiat possimus voluptatum quisquam quibusdam labore, quos voluptates praesentium rem iure reiciendis,
+            distinctio vero necessitatibus optio repellat. Blanditiis reprehenderit reiciendis vero et nulla, rem
+            tenetur eos sed quasi est soluta quibusdam numquam placeat. Enim quidem magni vitae sed est.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Nom du fichier</th>
+                    <th scope="col">Taille</th>
+                    <th scope="col">Description</th>
+                    <th scope="col" class="text-center">Télécharger</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rapport_arnica.pdf</td>
+                    <td>2.4 Mo</td>
+                    <td>Rapport complet sur l’Arnica montana</td>
+                    <td class="text-center">
+                        <a href="docs/rapport_arnica.pdf" download class="btn btn-success btn-sm">
+                            <i class="fa-solid fa-download"></i> Télécharger
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>guide_biodiversite.docx</td>
+                    <td>1.2 Mo</td>
+                    <td>Guide méthodologique biodiversité</td>
+                    <td class="text-center">
+                        <a href="docs/guide_biodiversite.docx" download class="btn btn-success btn-sm">
+                            <i class="fa-solid fa-download"></i> Télécharger
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>fiche_prairies.xlsx</td>
+                    <td>850 Ko</td>
+                    <td>Données sur les prairies humides</td>
+                    <td class="text-center">
+                        <a href="docs/fiche_prairies.xlsx" download class="btn btn-success btn-sm">
+                            <i class="fa-solid fa-download"></i> Télécharger
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <button class="btn">&lt; Prec</button>
+            <ul class="pages">
+                <li>1</li>
+                <li>2</li>
+                <li class="active">3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+            <button class="btn">Suiv &gt;</button>
         </div>
     </div>
 
-    <!-- ACTUALITÉS -->
-    <section class="actus">
-        <div class="container">
-            <h2>ACTUALITÉS</h2>
-            <div class="cards-actus">
-                <div class="card-info">
-                    <img src="img/1.png" alt="Actu 1">
-                    <h3>TITRE 1</h3>
-                    <p class="date">28 mars 2025</p>
-                    <p>In commodo dolor vitae sem vulputate pellentesque. Aliquam sit amet mattis mi...</p>
-                    <a href="actus_fiche.html">LIRE LA SUITE</a>
-                </div>
-                <div class="card-info">
-                    <img src="img/2.png" alt="Actu 2">
-                    <h3>TITRE 2</h3>
-                    <p class="date">28 mars 2025</p>
-                    <p>In commodo dolor vitae sem vulputate pellentesque. Aliquam sit amet mattis mi...</p>
-                    <a href="actus_fiche.html">LIRE LA SUITE</a>
-                </div>
-                <div class="card-info">
-                    <img src="img/3.png" alt="Actu 3">
-                    <h3>TITRE 3</h3>
-                    <p class="date">28 mars 2025</p>
-                    <p>In commodo dolor vitae sem vulputate pellentesque. Aliquam sit amet mattis mi...</p>
-                    <a href="actus_fiche.html">LIRE LA SUITE</a>
-                </div>
-            </div>
-            <a href="actus.html" class="btn-actus">Voir plus d'actualités</a>
-        </div>
-    </section>
 
     <!-- FOOTER -->
     <footer>
