@@ -243,6 +243,13 @@
             <!-- Onglet usages -->
             <div class="tab-pane fade" id="usages" role="tabpanel">
                 <div class="table-container">
+                    <div class="signler-container">
+                        <a class="signler-usage">
+                            Signaler un autre usage
+                            <hr>
+                        </a>
+                    </div>
+
                     <div class="table-header">
                         <div>Partie récoltées
                             <hr>
@@ -365,7 +372,7 @@
                                     <thead class="table-light">
                                         <tr>
                                             <th></th>
-                                            <th class="bg-color-green">Impact sur la ressource
+                                            <th class="bg-color-green">Incidence sur la ressource
                                                 <hr>
                                             </th>
                                             <th class="bg-color-green">Commentaires
@@ -484,7 +491,6 @@
     <script src="https://cdn.jsdelivr.net/npm/proj4@2.8.0/dist/proj4.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/ol-layerswitcher@4.1.0"></script>
 
-    <div id="map-france" style="width:100%;height:500px;"></div>
 
     <script>
         proj4.defs("EPSG:2154", "+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +units=m +no_defs");

@@ -257,6 +257,45 @@ h2 {
     margin: 0 auto;
 }
 
+.signler-usage hr {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.4;
+    border: none;
+    margin: 0 auto;
+}
+
+.signler-usage {
+    display: inline-flex;
+    padding: 15px 20px;
+    margin: 10px;
+    background: #a8b66a;
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.signler-usage:hover {
+    background: #2D621C;
+    transition: all 0.3s ease-in-out;
+}
+
+/* container pour pousser le bouton à droite */
+.signler-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
 .table-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

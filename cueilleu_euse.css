@@ -62,8 +62,6 @@ nav input {
 
 
 .swiper {
-    max-width: 1120px;
-    width: 1120px;
     height: 300px;
     margin-bottom: 50px;
     border: 2px solid #A8AF69;
@@ -86,6 +84,10 @@ nav input {
 
 .swiper-navigation-icon {
     color: #2D621C;
+}
+
+.ceuilleur-credit {
+    font-size: 12px;
 }
 
 .swiper-pagination-bullet-active {
