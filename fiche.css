@@ -299,6 +299,14 @@ h2 {
     border: 2px solid transparent !important;
 }
 
+.layer-switcher {
+    position: absolute;
+    top: 10px !important;
+    right: 10px !important;
+
+    text-align: left;
+}
+
 #v-pills-tabContent img {
     width: 80%;
 }

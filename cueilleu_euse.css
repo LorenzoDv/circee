@@ -112,20 +112,7 @@ nav input {
     transition: all 0.3s;
 }
 
-.ampoule-cueilleur-euse:hover {
-    transform: scale(1.1);
-    transition: all 0.3s;
-}
 
-.content-ampoule:has(.ampoule-cueilleur-euse:hover) {
-    border: 2px solid #F9D518;
-    transition: all 0.3s;
-    padding-left: 15px;
-}
-
-.content-ampoule:has(.ampoule-cueilleur-euse:hover) p {
-    display: block;
-}
 
 
 .content-ampoule {

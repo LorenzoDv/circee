@@ -162,6 +162,12 @@ nav input {
     color: white;
     font-weight: bold;
     position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.cueillette .bg-ceuillette-info:hover {
+    background-color: #2D621C;
+    transition: all 0.3s ease-in-out;
 }
 
 .cueillette .bg-ceuillette-info img {
@@ -173,6 +179,7 @@ nav input {
 
 .cueillette .boite-ceuillette p {
     margin: 0;
+    padding-left: 15px;
 }
 
 .cueillette .boite-ceuillette {

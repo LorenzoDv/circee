@@ -87,6 +87,10 @@ nav input {
     border-radius: 5px !important;
 }
 
+.btn-docu {
+    background-color: #2d621c;
+}
+
 .p-ceuillette-intro {
     margin-top: 100px;
     margin-bottom: 50px;
