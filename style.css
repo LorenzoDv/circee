@@ -211,6 +211,10 @@ nav input {
     justify-content: center;
 }
 
+.cards-actus img {
+    height: 290px;
+}
+
 .card-info {
     flex: 1 1 300px;
     padding-bottom: 20px;
