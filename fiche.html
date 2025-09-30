@@ -21,7 +21,7 @@
 <body>
 
     <nav>
-        <div class="logo"><a href="index.html"><img src="img/Capture d’écran du 2025-08-27 09-28-56.png" alt="logo"></a>
+        <div class="logo"><a href="index.html"><img src="img/unnamed (5).png" style="width: 158px;" alt="logo"></a>
         </div>
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -130,8 +130,7 @@
 
             <!-- Onglet statut -->
             <div class="tab-pane fade" id="statut" role="tabpanel">
-                <h2>Statut</h2>
-                <p>Ici tu ajoutes les infos sur le statut.</p>
+                <img src="img/unnamed (8).webp" style="width: 100%;" alt="Données économiques">
             </div>
 
             <!-- Onglet carte -->
@@ -442,10 +441,13 @@
 
 
     <!-- FOOTER -->
+    <img src="img/unnamed (9).webp" alt="logo" style="    height: 300px;
+    margin: 0 auto;
+    display: block;">
     <footer>
         <div class="footer-links row">
             <div class="col-md-4 d-flex align-items-center justify-content-center">
-                <img src="img/logo-footer.png" alt="logo">
+                <img src="img/unnamed (4).webp" alt="logo" style="width: 227px;">
             </div>
             <div class="col-md-5">
                 <div class="row">
@@ -491,7 +493,6 @@
     <script src="https://cdn.jsdelivr.net/npm/proj4@2.8.0/dist/proj4.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/ol-layerswitcher@4.1.0"></script>
 
-
     <script>
         proj4.defs("EPSG:2154", "+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +units=m +no_defs");
         ol.proj.proj4.register(proj4);
@@ -506,7 +507,7 @@
 
         // Couche avant 2010
         const before2010Layer = new ol.layer.Vector({
-            title: 'Avant 2010',
+            title: 'Répartition avant 2010',
             source: new ol.source.Vector(),
             visible: true,
             style: new ol.style.Style({
@@ -517,7 +518,7 @@
 
         // Couche après 2010
         const after2010Layer = new ol.layer.Vector({
-            title: 'Après 2010',
+            title: 'Répartition après 2010',
             source: new ol.source.Vector(),
             visible: true,
             style: new ol.style.Style({
@@ -526,11 +527,21 @@
             })
         });
 
+        // Nouvelle couche : Régions de cueillette Arnica montana
+        const regionsCueilletteLayer = new ol.layer.Vector({
+            title: 'Régions de cueillette (Arnica montana)',
+            source: new ol.source.Vector(),
+            visible: true,
+            style: new ol.style.Style({
+                stroke: new ol.style.Stroke({ color: 'red', width: 2 }),
+                fill: new ol.style.Fill({ color: 'rgba(255,0,0,0.2)' })
+            })
+        });
+
         // Map
-        // Au lieu de ol.control.defaults(...)
         const map = new ol.Map({
             target: 'map-france',
-            layers: [osmLayer, before2010Layer, after2010Layer],
+            layers: [osmLayer, before2010Layer, after2010Layer, regionsCueilletteLayer],
             view: new ol.View({
                 center: ol.proj.fromLonLat([2.2137, 46.2276]),
                 zoom: 6
@@ -541,7 +552,8 @@
                 new ol.control.LayerSwitcher({ tipLabel: 'Couches' }) // plugin LayerSwitcher
             ]
         });
-        // Charger le GeoJSON
+
+        // Charger le GeoJSON principal (arnica_montana.geojson)
         fetch('arnica_montana.geojson')
             .then(res => res.json())
             .then(data => {
@@ -565,9 +577,26 @@
                     map.getView().fit(extent, { padding: [50, 50, 50, 50], maxZoom: 6 });
                 }
             });
+
+        // Charger le GeoJSON des régions de cueillette
+        fetch('regions_cueillette_arnica_montana.geojson')
+            .then(res => res.json())
+            .then(data => {
+                const format = new ol.format.GeoJSON();
+                const features = format.readFeatures(data, {
+                    dataProjection: 'EPSG:4326',   // ✅ au lieu de 2154
+                    featureProjection: 'EPSG:3857'
+                });
+                regionsCueilletteLayer.getSource().addFeatures(features);
+
+                // Ajuster la vue sur cette couche si nécessaire
+                if (features.length > 0) {
+                    const extent = ol.extent.createEmpty();
+                    features.forEach(f => ol.extent.extend(extent, f.getGeometry().getExtent()));
+
+                }
+            });
     </script>
-
-
 
 </body>
 
