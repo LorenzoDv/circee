@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 
-<body>
+<body data-nav-current="accueil">
 
     <!-- HEADER -->
     <header class="hero">
@@ -23,24 +23,7 @@
         </div>
     </header>
 
-    <nav>
-        <div class="logo"><a href="index.html"><img src="img/unnamed (5).png" style="width: 158px;" alt="logo"></a>
-        </div>
-        </div>
-        <ul>
-            <li><a class="nav-active-accueil" href="index.html">Accueil</a></li>
-            <li><a href="cueillette.html">Cueillette</a></li>
-            <li><a href="Especes_cueillies.html">Espèces cueillies</a></li>
-            <li><a href="cueilleur_euse.html">Cueilleurs·euses</a></li>
-            <li><a href="filliere_aval.html">Filière aval</a></li>
-            <li><a href="projets.html">Projets</a></li>
-            <li><a href="documentation.html">Documentation</a></li>
-        </ul>
-        <div class="auth">
-            <input type="text" placeholder="Rechercher">
-            <button class="btn-login">Se connecter</button>
-        </div>
-    </nav>
+    <div id="site-nav"></div>
 
     <!-- SECTION CUEILLETTE -->
     <div class="container">
@@ -170,6 +153,7 @@
             </div>
         </div>
     </footer>
+    <script src="nav-loader.js"></script>
 </body>
 
 </html>

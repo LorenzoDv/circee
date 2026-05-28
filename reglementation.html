@@ -5,53 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centre de Ressources - Plantes Sauvages</title>
-    <link rel="stylesheet" href="actus_fiche.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="filliere_aval.css">
+    <link rel="stylesheet" href="reglementation.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
 </head>
 
-<body data-nav-current="documentation">
+<body data-nav-current="reglementation">
     <div id="site-nav"></div>
-    <div class="bdn-actus">
-        <h4>Une expo Cueillettes à Salagon</h1>
-    </div>
-    <!-- SECTION ACTUS -->
-    <div class="container">
-        <a href="actus.html" class="all-news"><i class="fa-solid fa-arrow-left"></i>Toutes les actualités</a>
-        <div class="news-card-large">
-            <div class="news-image">
-                <img src="img/600_sc_arnica-champ.webp" alt="Actu 1" style="height: 500px;
-    object-fit: contain;">
-                <div class="news-date">
-                    <span class="day">10</span>
-                    <span class="month">09</span>
-                </div>
-            </div>
-
-            <div class="news-content">
-                <h2 class="news-title">Une expo Cueillettes à Salagon</h2>
-                <p class="news-text">
-                    Le séminaire d'ethnobotanique de Salagon (Alpes de Hautes Provence) se tiendra du 2 au 4 octobre sur
-                    le thème des "nouvelles rencontres avec la plante". A l'occasion de cet événement, l'exposition
-                    "Cueillettes sensibles" réalisée par le Conservatoire Botanique National des Pyrénées et de
-                    Midi-Pyrénées avec le concours de l'AFC (association française des professionnels de la cueillette
-                    sauvage) sera visible à la salle de la Bonne Fontaine de Forcalquier.
-                </p>
-                <span class="news-fiche-date">10/09/2025</span>
-            </div>
+    <div class="bdn-cueillette-simple">
+        <div class="bdn-cueillette-simple-text">
+            <h1>Réglementation</h1>
+            <span>Accueil / Réglementation</span>
         </div>
     </div>
+    <div class="container">
+        <p class="p-ceuillette-intro" style="margin-top: 50px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+        </p>
+        <div id="map-france"></div>
+    </div>
 
-
-    <!-- FOOTER -->
-    <img src="img/unnamed (9).webp" alt="logo" style="    height: 300px;
-    margin: 0 auto;
-    display: block;">
+    <img src="img/unnamed (9).webp" alt="logo" style="height: 300px; margin: 0 auto; display: block;">
     <footer>
         <div class="footer-links row">
             <div class="col-md-4 d-flex align-items-center justify-content-center">
@@ -95,6 +79,24 @@
         </div>
     </footer>
 
+    <script>
+        const osmLayer = new ol.layer.Tile({
+            source: new ol.source.OSM()
+        });
+
+        const map = new ol.Map({
+            target: 'map-france',
+            layers: [osmLayer],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([2.2137, 46.2276]),
+                zoom: 6
+            }),
+            controls: [
+                new ol.control.Zoom(),
+                new ol.control.Attribution()
+            ]
+        });
+    </script>
     <script src="nav-loader.js"></script>
 </body>
 

@@ -18,25 +18,9 @@
     <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
 </head>
 
-<body>
+<body data-nav-current="especes">
 
-    <nav>
-        <div class="logo"><a href="index.html"><img src="img/unnamed (5).png" style="width: 158px;" alt="logo"></a>
-        </div>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="cueillette.html">Cueillette</a></li>
-            <li><a class="nav-active-especes-cueillies" href="Especes_cueillies.html">Espèces cueillies</a></li>
-            <li><a href="cueilleur_euse.html">Cueilleurs·euses</a></li>
-            <li><a href="filliere_aval.html">Filière aval</a></li>
-            <li><a href="projets.html">Projets</a></li>
-            <li><a href="documentation.html">Documentation</a></li>
-        </ul>
-        <div class="auth">
-            <input type="text" placeholder="Rechercher">
-            <button class="btn-login">Se connecter</button>
-        </div>
-    </nav>
+    <div id="site-nav"></div>
     <div class="bdn-cueillette">
         <img src="img/bdn-arnica.png" class="w-100" alt="Cueillette">
     </div>
@@ -598,6 +582,7 @@
             });
     </script>
 
+    <script src="nav-loader.js"></script>
 </body>
 
 </html>

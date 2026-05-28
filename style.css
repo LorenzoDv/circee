@@ -71,6 +71,7 @@ nav {
     align-items: center;
     background: white;
     padding: 10px 40px;
+    font-family: 'Oswald', sans-serif;
 }
 
 nav .logo {
@@ -86,14 +87,34 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
+    font-family: 'Oswald', sans-serif !important;
     font-weight: 500;
     font-weight: bold;
     text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    line-height: 1.2;
+}
+
+nav span,
+nav ul li .nav-label {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    line-height: 1.2;
+    white-space: nowrap;
 }
 
 .nav-active-accueil {
@@ -102,6 +123,39 @@ nav ul li a {
 
 nav ul li a:hover {
     border-bottom: 4px solid #A8AF69;
+}
+
+nav .nav-item-has-submenu:hover>.nav-label {
+    border-bottom: 4px solid #A8AF69;
+}
+
+nav .nav-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: white;
+    border: 1px solid #e5e5e5;
+    padding: 12px 0 6px;
+    z-index: 1000;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+nav .nav-submenu li {
+    margin: 0;
+}
+
+nav .nav-submenu a {
+    display: block;
+    padding: 8px 14px;
+    font-family: 'Oswald', sans-serif !important;
+    text-transform: none;
+    border-bottom: none !important;
+}
+
+nav .nav-item-has-submenu:hover .nav-submenu {
+    display: block;
 }
 
 nav .auth {
